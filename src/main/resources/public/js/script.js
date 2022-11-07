@@ -185,8 +185,10 @@ $("#delete-node").on("click", function () {
             success : function(data){
                 $("#node-detail").html(syntaxHighlight(data));
                 layer.close(index);
+                //delete html node
+                $(document.querySelector(("#".concat(path)).replaceAll("/","\\/"))).remove();
                 layer.msg("Delete Success!");
-                window.location.reload();
+                //window.location.reload();
             }
         });
     }, function(){
