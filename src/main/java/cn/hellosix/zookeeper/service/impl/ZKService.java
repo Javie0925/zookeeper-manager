@@ -114,10 +114,10 @@ public class ZKService implements IZKService {
                     childNode.setType(type);
                     childrenNodeList.add(childNode);
                 }
-                if (i > 50) {
-                    childrenNodeList.add(new ZKNode(path + "/...", "...", Constants.ELLIPSIS));
-                    break;
-                }
+                //if (i > 50) {
+                //    childrenNodeList.add(new ZKNode(path + "/...", "...", Constants.ELLIPSIS));
+                //    break;
+                //}
             }
         }
     }
